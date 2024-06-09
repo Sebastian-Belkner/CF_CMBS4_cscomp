@@ -1,5 +1,5 @@
 """
-Masked sky iterative delensing on simulated CMB-S4 AoA observed CMB polarization data.
+MF estimator helper on simulated CMB-S4 component separation comparison project observed CMB polarization data.
 
 QE and iterative reconstruction uses anisotropic filters. 
 """
