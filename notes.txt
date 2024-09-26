@@ -1,0 +1,9 @@
+for fixing mpi issues and starting jobs:
+
+module load evp-patch
+conda activate py3.7p
+cd git/notebooks/cmbs4/foregroundcomparison_compsep/
+export OMP_NUM_THREADS=32
+srun -n 4 -c 32 --cpu-bind=core python3 ~/git/delensalot/delensalot/run.py -r ~/git/notebooks/cmbs4/foregroundcomparison_compsep/config/conf_cscomp_08b.00_mfsimsub_pixwin2.py
+
+srun -n 5 -c 32 --cpu-bind=core python3 ~/git/delensalot/delensalot/run.py -r config/conf_AoA_a1.11_mfsimsub.py
